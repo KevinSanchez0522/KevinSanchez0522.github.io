@@ -1,0 +1,44 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+.section { padding: 4rem 0; }
+h2 { font-size: 1.8rem; margin-bottom: 2rem; color: var(--text); border-bottom: 2px solid var(--border); padding-bottom: 0.5rem; }
+
+/* Hero */
+.hero { padding: 6rem 0 3rem; }
+.badge { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(56, 189, 248, 0.15); color: var(--accent); border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; }
+.hero h1 { font-size: 2.75rem; font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+.subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 650px; margin-bottom: 2rem; }
+.hero-actions { display: flex; gap: 1rem; }
+.btn { padding: 0.65rem 1.25rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.2s; }
+.btn-primary { background: var(--accent); color: #0f172a; }
+.btn-primary:hover { opacity: 0.9; }
+.btn-secondary { border: 1px solid var(--border); color: var(--text); }
+.btn-secondary:hover { background: var(--card-bg); }
+
+/* Grid de Proyectos */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.project-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: transform 0.2s; }
+.project-card:hover { transform: translateY(-4px); }
+.tag { font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+.project-card h3 { margin: 0.5rem 0; font-size: 1.25rem; }
+.project-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.2rem; }
+.card-links a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.9rem; margin-right: 1rem; }
+.card-links .live-demo { color: var(--accent); }
+
+/* Habilidades */
+.skills-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.skills-tags span { background: var(--card-bg); border: 1px solid var(--border); padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.85rem; }
+
+/* Footer */
+.footer { text-align: center; border-top: 1px solid var(--border); padding: 4rem 0; background: #0b1120; }
+.email-link { color: var(--accent); font-size: 1.25rem; text-decoration: none; font-weight: 600; }
